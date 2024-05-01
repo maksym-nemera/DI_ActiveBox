@@ -1,0 +1,260 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@font-face {
+    font-family: glyphicons-halflings-regular;
+    src: url(../fonts/glyphicons-halflings-regular.ttf);
+}
+/* zroing */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+/* main-tags */
+.hidden{
+    display: none;
+}
+.btn__primary{
+    display: inline-block;
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Raleway - Semi Bold";
+    width: 200px;
+    height: 46px;
+    text-align: center;
+    background-color: #e84545;
+    border: none;
+    margin: 95px auto 0;
+    text-transform: uppercase;
+    transition: 1s;
+
+}
+.btn__primary:hover{
+    background-color: #e84545ab;
+}
+p{
+    color: #6c7279;
+    font-size: 14px;
+}
+
+/* header */
+.header{
+    background: url(../images/banner.jpg) center/cover no-repeat;
+}
+nav{
+    background: none;
+    box-shadow: 0 0 0 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);;
+}
+.brand__logo_img{
+    width: 189px;
+    height: 24px;
+}
+.header__block{
+    text-align: center;
+    font-style: 22px;  
+    padding: 256px 0 256px 0;
+}
+.header__block_primary{
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: 65px;
+    color: #fff;
+}
+.header__block_text{
+    color: #fff;
+    text-align: center;
+}
+
+/* main service*/
+.service{
+    padding: 120px 0;
+}
+.service__container{
+    text-align: center;
+}
+.service__row_padding{
+    padding: 50px;
+}
+.service__row_padding div{
+    padding: 15px 20px !important;
+}
+.service__header{
+    font-size: 14px;
+    font-weight: 700;
+    color: #2d3033;
+    text-transform: uppercase;
+}
+.service__text{
+    color: #000;
+    font-size: 14px;
+}
+/* gallery */
+.gallary__block{
+    display: grid;
+    grid-auto-rows: 350px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 100px;
+}
+.gallery__block_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallary__block_box{
+    position: relative;
+}
+.gallery__block_header{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.gallery__block_hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.gallary__block_box:hover .gallery__block_hover{
+    background-color: rgba(232, 69, 69, 0.9);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+} 
+.gallery__block_text{
+    color: #fff;
+}
+/* идея была прикольной но всё равно оно работает не идаельно((((((( */
+.gallary__block .materialboxed{
+    height: 100%;
+}
+/* team */
+.team{
+    margin-bottom: 100px;
+}
+.team__header{
+    color: #2d3033;
+    font-size: 22px;
+    font-weight: 400;
+}
+.team__text{
+    color: #6c7279; 
+    padding-top: 30px;
+    padding-bottom: 31px;
+}
+.team__under_header{
+    color: #e84545;
+    padding-top: 11px;
+}
+.team__massagers i{
+    color: #c6cacc;
+    padding-right: 20px;
+}
+.team__massagers i:hover{
+    color: #e84545;
+}
+
+/* ovner */
+.ovner{
+    display: flex;
+    justify-content: center;
+}
+.ovner__purple_block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #53354a;
+    width: 100%;
+    height: 500px;
+}
+.ovner__purple_text{
+    font-family: Cardo;
+    color: #ffffff;
+    font-style: italic;
+    font-size: 36px;
+    padding-left: 60px;
+    padding-bottom: 30px;
+}
+.ovner__purple_info{
+    padding-left: 60px;
+    color: #ffffff;
+}
+
+/* aggitation */
+.aggitation{
+    padding: 100px 0;
+    text-align: center;
+}
+.agitation__header{
+    color: #2d3033;
+    font-size: 28px;
+    font-family: Raleway;
+    font-weight: 300;
+}
+.agitation__header_text{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #2d3033;
+}
+.agitation__block_btn{
+    width: 280px;
+    height: 46px;
+    background-color: #e84545;
+    font-size: 13px;
+    font-family: "Raleway - Semi Bold";
+    font-weight: 400;
+}
+
+/* footer */
+footer{
+    position: relative;
+    background-color: #3a3e64;
+    padding: 100px 0;
+    text-align: center;
+    align-items: center;
+}
+.footer_header{
+    color: #fff;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 700;
+}
+.footer__massager i{
+    color: #ffffff;
+    border: 2px solid #fff;
+    padding: 13px;
+    transition: 1s;
+}
+.footer__massager i:hover{
+    color: #e84545;
+    border-color: #e84545;
+}
+.second__footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #313454;
+    padding: 38px;
+}
+/* media ovner + gallery */
+@media screen and (max-width: 1024px){
+    .ovner{
+        flex-direction: column;
+        text-align: center;
+    }
+    .team__container .col{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+     }
+}

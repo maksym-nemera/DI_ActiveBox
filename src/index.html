@@ -1,56 +1,266 @@
 <!DOCTYPE html>
-<html lang="en" class="page">
-  <head class="page__head">
+<html lang="en">
+<head>
+    <!-- meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example</title>
-    <link rel="stylesheet" href="./styles/main.scss">
-    <link rel="icon" href="./images/icons/Icon-cookie.png">
-    <script
-      type="module"
-      src="scripts/main.js"
-      defer
-    ></script>
-  </head>
-  <body class="page__body">
+    <title>Active</title>
+    <!-- links -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
     <header class="header">
-      <div class="container">
-        <a href="#">
-          <img
-            src="images/Logo.png"
-            alt="example Logo"
-          >
-        </a>
-
-        <h1>hello example</h1>
-      </div>
+        <div class="container container__header">
+            <nav>
+                <div class="nav-wrapper">
+                  <a href="#!" class="brand-logo"><img class="brand__logo_img" src="images/logo@2x.png" alt=""></a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">dehaze</i></a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Download</a></li>
+                  </ul>
+                </div>
+              </nav>
+            
+              <ul class="sidenav" id="mobile-demo">
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Download</a></li>
+              </ul>
+              <div class="header__block">
+                <div class="row">
+                    <div class="col ">
+                        <h1  class="header__block_primary">Your Favorite One Page
+                            Multi Purpose Template</h1>
+                            <p class="header__block_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus <br> magna
+                                vel scelerisque nisl consectetur et.</p>
+                                <button class="header__block_btn btn__primary" >Find Out More</button>
+                    </div>
+                </div>
+              </div>
+              
+        </div>
+        
     </header>
-
-    <nav class="page__menu menu" id="menu">
-      <div class="container">
-        nav
-      </div>
-    </nav>
-
-    <main>
-      <article>
-        <section class="container">
-          <div class="grid grid--tablet">
-            <div class="
-              grid__item-tablet--1-5
-              grid__item-desktop--1-5"
-            >
-              main
+    <main class="main">
+        <section class="service">
+            <h2 class="hidden">info</h2>
+            <div class="container service__container">
+                <div class="row service__row_padding">
+                    <div class="col m4">
+                        <img src="images/Layer 48.png" alt="" class="service__img">
+                        <h3 class="service__header">Easily Customised</h3>
+                        <p class="service__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>   
+                </div>
+                <div class="col m4">
+                    <img src="images/Layer 47.png" alt="" class="service__img">
+                    <h3 class="service__header">Modern Design</h3>
+                    <p class="service__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>   
             </div>
-          </div>
+                <div class="col m4">
+                    <img src="images/Layer 44.png" alt="" class="service__img">
+                    <h3 class="service__header">Responsive REady</h3>
+                    <p class="service__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </div>
+            </div>
+            <div class="row service__row_padding">
+                <div class="col m4">
+                    <img src="images/Layer 46.png" alt="" class="service__img">
+                    <h3 class="service__header">Easily Customised</h3>
+                    <p class="service__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            </div>
+            <div class="col m4">
+                <img src="images/Layer 44.png" alt="" class="service__img">
+                <h3 class="service__header">Responsive REady</h3>
+                <p class="service__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </div>
+            <div class="col m4">
+                <img src="images/Layer 45.png" alt="" class="service__img">
+                <h3 class="service__header">Responsive REady</h3>
+                <p class="service__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            </div>
+        </div>
         </section>
-      </article>
-    </main>
+        <section class="gallery">
+            <h2 class="hidden">gallery</h2>
+            <div class="gallary__block">
+                <!-- 1 -->
+                <div class="gallary__block_box materialboxed">
+                    <img src="images/work-1.jpg" alt="" class="gallery__block_img">
+                    <div class="gallery__block_hover">
+                        <h5 class="gallery__block_header">Project Name</h5>
+                        <p class="gallery__block_text">User Interface Design</p>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="gallary__block_box materialboxed">
+                    <img src="images/work-2.jpg" alt="" class="gallery__block_img">
+                    <div class="gallery__block_hover">
+                        <h5 class="gallery__block_header">Project Name</h5>
+                        <p class="gallery__block_text">User Interface Design</p>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="gallary__block_box materialboxed">
+                    <img src="images/work-3.jpg" alt="" class="gallery__block_img">
+                    <div class="gallery__block_hover">
+                        <h5 class="gallery__block_header">Project Name</h5>
+                        <p class="gallery__block_text">User Interface Design</p>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="gallary__block_box materialboxed">
+                    <img src="images/work-4.jpg" alt="" class="gallery__block_img">
+                    <div class="gallery__block_hover ">
+                        <h5 class="gallery__block_header">Project Name</h5>
+                        <p class="gallery__block_text">User Interface Design</p>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="gallary__block_box materialboxed">
+                    <img src="images/work-5.jpg" alt="" class="gallery__block_img">
+                    <div class="gallery__block_hover">
+                        <h5 class="gallery__block_header">Project Name</h5>
+                        <p class="gallery__block_text">User Interface Design</p>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="gallary__block_box materialboxed">
+                    <img src="images/work-6.jpg" alt="" class="gallery__block_img">
+                    <div class="gallery__block_hover">
+                        <h5 class="gallery__block_header">Project Name</h5>
+                        <p class="gallery__block_text">User Interface Design</p>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="gallary__block_box materialboxed">
+                    <img src="images/work-7.jpg" alt="" class="gallery__block_img">
+                    <div class="gallery__block_hover">
+                        <h5 class="gallery__block_header">Project Name</h5>
+                        <p class="gallery__block_text">User Interface Design</p>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="gallary__block_box materialboxed">
+                    <img src="images/work-8.jpg" alt="" class="gallery__block_img">
+                    <div class="gallery__block_hover">
+                        <h5 class="gallery__block_header">Project Name</h5>
+                        <p class="gallery__block_text">User Interface Design</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team">
+            <h2 class="hidden">team</h2>
+            <div class="row">
+                <div class="container team__container">
+                    <!-- 1 -->
+                    <div class="col m3">
+                        <img src="images/team-1.jpg" alt="" class="team__img">
+                        <h5 class="team__header">Ruth Woods</h5>
+                        <span class="team__under_header">Data Scientist</span>
+                        <p class="team__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                        <div class="team__massagers">
+                            <a class="team__massagers_item" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a class="team__massagers_item" href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a class="team__massagers_item" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="col m3">
+                        <img src="images/team-2.jpg" alt="" class="team__img">
+                        <h5 class="team__header">Ruth Woods</h5>
+                        <span class="team__under_header">Data Scientist</span>
+                        <p class="team__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                        <div class="team__massagers">
+                            <a class="team__massagers_item" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a class="team__massagers_item" href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a class="team__massagers_item" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="col m3">
+                        <img src="images/team-3.jpg" alt="" class="team__img">
+                        <h5 class="team__header">Ruth Woods</h5>
+                        <span class="team__under_header">Data Scientist</span>
+                        <p class="team__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                        <div class="team__massagers">
+                            <a class="team__massagers_item" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a class="team__massagers_item" href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a class="team__massagers_item" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                        <!-- 4 -->
+                    </div>
+                    <div class="col m3">
+                        <img src="images/team-4.jpg" alt="" class="team__img">
+                        <h5 class="team__header">Ruth Woods</h5>
+                        <span class="team__under_header">Data Scientist</span>
+                        <p class="team__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                        <div class="team__massagers">
+                            <a class="team__massagers_item" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a class="team__massagers_item" href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a class="team__massagers_item" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ovner">
+            <h2 class="hidden">team</h2>
+            <img src="images/testimonial-1.jpg" alt="" class="ovner__img">
+            <div class="ovner__purple_block">
+                <p class="ovner__purple_text">“Integer posuere erat a ante <br> venenatis dapibus posuere velit <br> aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
+                <span class="ovner__purple_info">Susan Sims, Interaction Designer at XYZ</span>
+            </div>
+        </section>
+        <section class="aggitation">
+            <h2 class="agitation__header">Are You Ready to Start? Download Now For Free!</h2>
+            <p class="agitation__header_text">Fusce dapibus, tellus ac cursus commodo</p>
+            <button class="agitation__block_btn btn__primary" >Find Out More</button>
+        </section>
+      </main>
+      <footer>
+        <div class="container container__footer">
+            <div class="row">
+                <div class="col m4">
+                    <h5 class="footer_header">Location</h5>
+                    <p class="footer__adress">3481 Melrose Place <br>
+                        Beverly Hills, CA 90210</p>
+                </div>
+                <div class="col m4">
+                    <h5 class="footer_header">Share with Love</h5>
+                    <div class="footer__massager">
+                        <a class="team__massagers_item" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a class="team__massagers_item" href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a class="team__massagers_item" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col m4">
+                    <h5 class="footer_header">About ActiveBox</h5>
+                    <p class="footer__info">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </div>
+            </div>
+        </div>
+        <div class="second__footer">
+            <p>Copyright © 2015 ActiveBox. All Rights Reserved
+            </p>
+        </div>
+      </footer>
 
-    <footer class="footer">
-      <div class="container">
-        footer
-      </div>
-    </footer>
-  </body>
+
+
+
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/script.js" ></script>
+</body>
 </html>
